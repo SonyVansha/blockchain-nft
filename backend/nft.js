@@ -12,7 +12,7 @@ class NFTBlockchain extends Blockchain {
     }
 
     loadNFTs() {
-        if (fs.existsSync('nfts.json')) {
+        if (fs.existsSync('/data/nfts.json')) {
             return JSON.parse(fs.readFileSync('nfts.json'));
         }
         return [];
